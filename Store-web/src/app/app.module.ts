@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from '../views/header/header.component';
-import { MainComponent } from '../views/main/main.component';
-import { NavbarComponent } from '../views/navbar/navbar.component';
-import { HeroIComponent } from '../views/hero-i/hero-i.component';
+import { HeaderComponent } from './views/header/header.component';
+import { MainComponent } from './views/main/main.component';
+import { NavbarComponent } from './views/navbar/navbar.component';
+import { HeroIComponent } from './views/hero-i/hero-i.component';
+import { DividerComponent } from './views/divider/divider.component';
+import { LandingComponent } from './views/landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { HeroIComponent } from '../views/hero-i/hero-i.component';
     HeaderComponent,
     MainComponent,
     NavbarComponent,
-    HeroIComponent
+    HeroIComponent,
+    DividerComponent,
+    LandingComponent,
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,17 @@ import { NavbarComponent } from './views/navbar/navbar.component';
 import { HeroIComponent } from './views/hero-i/hero-i.component';
 import { DividerComponent } from './views/divider/divider.component';
 import { LandingComponent } from './views/landing/landing.component';
+import { BookingComponent } from './views/booking/booking.component';
+import { Routes, RouterModule } from '@angular/router';
+
+const appRoutes: Routes =[
+  {path: 'landing', component: LandingComponent},
+  { path: '',
+  redirectTo: '/landing',
+  pathMatch: 'full'
+  },
+  {path: 'booking', component: BookingComponent}
+]
 
 @NgModule({
   declarations: [
@@ -19,10 +30,14 @@ import { LandingComponent } from './views/landing/landing.component';
     HeroIComponent,
     DividerComponent,
     LandingComponent,
+    BookingComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(
+      appRoutes,{enableTracing:true}
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]

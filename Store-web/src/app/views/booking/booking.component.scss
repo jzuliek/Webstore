@@ -1,0 +1,22 @@
+#salonHero{
+    background-image: url(/assets/salonzoomed.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+    position: relative;
+}
+#bookingTitle{
+    position: absolute;
+    bottom: 50%;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+}
+.gold{
+    background: rgba(147, 114, 11, 0.4);
+    color: black;
+    font-weight: bold;
+}
+h1{
+    font-size: 75px;
+}

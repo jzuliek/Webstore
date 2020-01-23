@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule} from '@angular/forms';
 import {NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
+import {CarouselModule} from 'primeng/carousel';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -58,6 +59,7 @@ const appRoutes: Routes =[
     AppRoutingModule,
     NgbModule,
     FormsModule,
+    CarouselModule,
     RouterModule.forRoot(
       appRoutes,{enableTracing:true}
     )

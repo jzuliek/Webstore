@@ -1,21 +1,20 @@
-<div id="salonHero" class="container-fluid">
+<div id="salonHero" class="row">
     <div id ="bookingTitle" class="col-5 gold">
         <h1>Book An Appointment</h1>
     </div>
 
 </div>
 <div class="container">
-    <form class="form-inline">
-        <div class="form-group">
-            <div class="input-group">
-                <input class="form-control" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="model" ngbDatepicker
-                    #d="ngbDatepicker" [placement]="placement" [positionTarget]="buttonEl">
-                <div class="input-group-append">
-                    <button #buttonEl class="btn btn-outline-secondary calendar" (click)="d.toggle()"
-                        type="button"></button>
-                </div>
-            </div>
+    <div class="row center">
+        <div class="col">
+            <app-dropdown-services></app-dropdown-services>
         </div>
-    </form>
+        <div class="col">
+            <app-date-picker></app-date-picker>
 
+        </div>
+        <div class="col">
+            <app-timepicker></app-timepicker>
+        </div>
+    </div>
 </div>

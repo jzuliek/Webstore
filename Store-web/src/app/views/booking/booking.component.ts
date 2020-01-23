@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
+
 
 
 
@@ -11,8 +11,7 @@ import {NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
 })
 export class BookingComponent implements OnInit {
 
-  model: NgbDateStruct;
-  placement = 'bottom';
+ 
 
   constructor() { }
 

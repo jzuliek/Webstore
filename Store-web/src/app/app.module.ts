@@ -23,6 +23,7 @@ import { DatePickerComponent } from './components/date-picker/date-picker.compon
 import { CartComponent } from './components/cart/cart.component';
 import { TimepickerComponent } from './components/timepicker/timepicker.component';
 import { DropdownServicesComponent } from './components/dropdown-services/dropdown-services.component';
+import { ProductdetailsComponent } from './views/productdetails/productdetails.component';
 
 const appRoutes: Routes =[
   {path: 'landing', component: LandingComponent},
@@ -53,6 +54,7 @@ const appRoutes: Routes =[
     CartComponent,
     TimepickerComponent,
     DropdownServicesComponent,
+    ProductdetailsComponent,
   ],
   imports: [
     BrowserModule,

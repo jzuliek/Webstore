@@ -1,27 +1,5 @@
 <div class="row white" >
-    <div class="col-1">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Description</th>
-                    <th scope="col">Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let country of countries; index as i">
-                    <th scope="row">{{ i + 1 }}</th>
-                    <td>
-                        <img [src]="'https://upload.wikimedia.org/wikipedia/commons/' + country.flag" class="mr-2"
-                            style="width: 20px">
-                        {{ country.name }}
-                    </td>
-                    <td>{{ country.area | number }}</td>
-                    <td>{{ country.population | number }}</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="col-9 d-flex justify-content-center" style="margin-top: 300px;"><app-productdetails></app-productdetails></div>
+    <app-productlist (selectedProduct) = "onSelection($event)"></app-productlist>
+    <div class="col-9 d-flex justify-content-center" style="margin-top: 300px;"><app-productdetails [deetsData] = "selectedProduct"></app-productdetails></div>
 </div>
+

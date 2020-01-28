@@ -24,6 +24,7 @@ import { CartComponent } from './components/cart/cart.component';
 import { TimepickerComponent } from './components/timepicker/timepicker.component';
 import { DropdownServicesComponent } from './components/dropdown-services/dropdown-services.component';
 import { ProductdetailsComponent } from './views/productdetails/productdetails.component';
+import { ProductlistComponent } from './views/productlist/productlist.component';
 
 const appRoutes: Routes =[
   {path: 'landing', component: LandingComponent},
@@ -55,6 +56,7 @@ const appRoutes: Routes =[
     TimepickerComponent,
     DropdownServicesComponent,
     ProductdetailsComponent,
+    ProductlistComponent,
   ],
   imports: [
     BrowserModule,

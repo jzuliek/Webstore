@@ -1,0 +1,37 @@
+
+    <div class="col-1">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products" (click) = "productClicked(product)">
+                <th scope="row">{{product.id}}</th>
+                <td>
+                    <img [src]="" class="mr-2"
+                        style="width: 20px">
+                    {{product.productName}}
+                </td>
+                <td>{{ product.productDesc}}</td>
+                <td>{{ product.price}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+<!--
+
+
+    <div class="list-group">
+        <a #item *ngFor = "let product of products"  class="list-group-item list-group-item-action">
+          {{product.productName}} {{product.productDesc}}
+        </a>
+        
+      </div>
+-->

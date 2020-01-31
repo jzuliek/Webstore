@@ -31,5 +31,9 @@ export class CartComponent implements OnInit {
       
     });
   }
+  toggleList(){
+    this.showList = !this.showList;
+    console.log(this.cartItems)
+  }
 
 }

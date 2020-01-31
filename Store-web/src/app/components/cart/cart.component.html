@@ -1,3 +1,45 @@
+<ng-template #popContent>
+  
+    <div class="container" >
+        <div class="shopping-cart">
+            <div class="shopping-cart-header">
+                <i class="fa fa-shopping-cart cart-icon"></i><span class="badge badge-info">{{cartCount}}</span>
+                <div class="shopping-cart-total">
+                    <span>Total:</span>
+                    <span>${{cartTotal}}</span>
+                </div>
+            </div>
+            <div *ngIf="cartItems.length == 0" class="py-2">
+                No items in your cart!
+            </div>
+            <ul class="shopping-cart-items">
+                <li *ngFor="let item of cartItems">
+                    <!--<img src="/assets/lash1.jpeg" alt="Item" />-->
+                    <span class="item-name">{{item.pName}}</span>
+                    <span class="item-price">${{item.price}}</span>
+                    <span class="item-quantity">Quantity: {{item.quantity}}</span>
+                    <a class="item-remove text-danger" (click) = "removeFromCart(item, i)"> Remove </a>
+                </li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-block">Checkout</a>
+        </div>
+    </div>
+</ng-template>
+<ng-template #popTitle>Cart Items</ng-template>
+
+<button type="button" placement ="left-top" [ngbPopover]="popContent" [popoverTitle]="popTitle">
+    <i class="fa">&#xf07a;</i>
+    <span class='badge' id='lblCartCount'> {{cartCount}} </span>
+</button>
+
+
+
+
+
+<!--<a id="cart" (click) = "toggleList()"><i class="fa fa-shopping-cart"></i> Cart <span class="badge badge-info">{{cartCount}}</span></a>
+-->
+
+<!--
 <a type="button"  placement="left-top"
         ngbPopover= 'asdfasdfasdf
         asdfasdfasdfasf
@@ -6,3 +48,4 @@
   <img src="https://img.icons8.com/officexs/30/000000/shopping-cart.png">
   <span class="badge badge-info">{{cartCount}}</span>
 </a>
+-->

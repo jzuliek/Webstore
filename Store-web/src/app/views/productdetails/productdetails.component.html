@@ -10,11 +10,11 @@
                 <h2>{{deetsData?.productDesc}}</h2>
             </div>
             <div class="row " style="margin-top: 50px;">
-                <h3>{{deetsData?.price}}</h3>
+                <h3>${{deetsData?.price}}</h3>
             </div>
             <div class="row">
                 <div class="col">
-                    <button type="button" class="btn btn-dark">Add to bag</button>
+                    <button type="button" class="btn btn-dark" (click) = "addToCart(deetsData)">Add to bag</button>
                 </div>
             </div>
         </div>

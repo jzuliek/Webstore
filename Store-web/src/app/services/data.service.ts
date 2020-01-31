@@ -9,59 +9,57 @@ export class DataService {
   private productDeetsdata: Products;
   private productData: Products[]=[
     {
-      id:1,
-      productName: 'Lash 1',
-      productDesc: 'cool lashes',
-      price: '1 dolla',
-      image: '/assets/lash1.jpeg'
+      id:'1',
+      productName: 'QueenS',
+      productDesc: 'Glamorized and handcrafted silk lashes to perfection',
+      price: '12',
+      image: '/assets/lash1.jpeg',
+      qty: 0
 
     },
     {
-      id:2,
-      productName: 'Lash 2',
-      productDesc: 'very good lashes',
-      price: '4 dolla',
-      image: '/assets/lash2.jpeg'
+      id:'2',
+      productName: 'PrincessV',
+      productDesc: 'Glamorized and handcrafted silk lashes to perfection',
+      price: '12',
+      image: '/assets/lash2.jpeg',
+      qty: 0
 
     },
     {
-      id:3,
-      productName: 'Lash 3',
-      productDesc: 'not cool lashes',
-      price: '9 dolla',
-      image: '/assets/lash3.jpg'
+      id:'3',
+      productName: 'Reyna',
+      productDesc: 'Glamorized and handcrafted silk lashes to perfection',
+      price: '12',
+      image: '/assets/lash3.jpg',
+      qty: 0
 
     },
     {
-      id:4,
-      productName: 'Lash 4',
-      productDesc: 'bad lashes',
-      price: '9 dolla',
-      image: '/assets/placeholder-product.png'
+      id:'4',
+      productName: 'Jenngo',
+      productDesc: 'Glamorized and handcrafted silk lashes to perfection',
+      price: '12',
+      image: '/assets/placeholder-product.png',
+      qty: 0
 
     },
     {
-      id:5,
-      productName: 'Lash 5',
-      productDesc: 'cool lashes',
-      price: '1 dolla',
-      image: '/assets/placeholder-product.png'
+      id:'5',
+      productName: 'HennesseyLi',
+      productDesc: 'Glamorized and handcrafted silk lashes to perfection',
+      price: '14',
+      image: '/assets/placeholder-product.png',
+      qty: 0
 
     },
     {
-      id:6,
-      productName: 'Lash 6',
-      productDesc: 'cool lashes',
-      price: '1 dolla',
-      image: '/assets/placeholder-product.png'
-
-    },
-    {
-      id:7,
-      productName: 'Lash 7',
-      productDesc: 'cool lashes',
-      price: '1 dolla',
-      image: '/assets/placeholder-product.png'
+      id:'6',
+      productName: 'Jbae',
+      productDesc: 'Glamorized and handcrafted mink lashes to perfection',
+      price: '12',
+      image: '/assets/placeholder-product.png',
+      qty: 0
 
     }
   ];

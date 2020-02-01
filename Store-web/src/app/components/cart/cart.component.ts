@@ -35,5 +35,8 @@ export class CartComponent implements OnInit {
     this.showList = !this.showList;
     console.log(this.cartItems)
   }
+  removeFromCart(item, index){
+    this.cService.removeProduct(item, index);
+  }
 
 }

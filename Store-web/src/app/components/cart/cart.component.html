@@ -17,7 +17,7 @@
                     <!--<img src="/assets/lash1.jpeg" alt="Item" />-->
                     <span class="item-name">{{item.pName}}</span>
                     <span class="item-price">${{item.price}}</span>
-                    <span class="item-quantity">Quantity: {{item.quantity}}</span>
+                    <span class="item-quantity">Quantity: {{item.qty}}</span>
                     <a class="item-remove text-danger" (click) = "removeFromCart(item, i)"> Remove </a>
                 </li>
             </ul>
@@ -27,7 +27,7 @@
 </ng-template>
 <ng-template #popTitle>Cart Items</ng-template>
 
-<button type="button" placement ="left-top" [ngbPopover]="popContent" [popoverTitle]="popTitle">
+<button type="button" placement ="left-top" [autoClose] = "outside" [ngbPopover]="popContent" [popoverTitle]="popTitle">
     <i class="fa">&#xf07a;</i>
     <span class='badge' id='lblCartCount'> {{cartCount}} </span>
 </button>

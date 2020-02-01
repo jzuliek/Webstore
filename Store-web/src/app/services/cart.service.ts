@@ -43,4 +43,20 @@ export class CartService {
     this.$cartQty.next(this.cartQty);
     
   }
+  removeProduct(item, index){
+    this.cartItems.splice(index, 1);
+    const totalPrice = item.qty * +item.price;
+    this.cartTotal -= totalPrice;
+    this.cartQty -= item.qty;
+
+    this.broadcastSubjects();
+
+
+  }
+
+  broadcastSubjects(){
+    this.$cartItems.next(this.cartItems);
+    this.$cartQty.next(this.cartQty);
+    this.$cartTotal.next(this.cartTotal);
+  }
 }

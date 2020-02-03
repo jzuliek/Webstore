@@ -25,6 +25,7 @@ import { TimepickerComponent } from './components/timepicker/timepicker.componen
 import { DropdownServicesComponent } from './components/dropdown-services/dropdown-services.component';
 import { ProductdetailsComponent } from './views/productdetails/productdetails.component';
 import { ProductlistComponent } from './views/productlist/productlist.component';
+import { ContactComponent } from './views/contact/contact.component';
 
 const appRoutes: Routes =[
   {path: 'landing', component: LandingComponent},
@@ -35,7 +36,10 @@ const appRoutes: Routes =[
   pathMatch: 'full'
   },
   {path: 'booking', component: BookingComponent},
-  {path: 'cart', component: CartComponent}
+  {path: 'cart', component: CartComponent},
+  {path: 'createAccount', component: CreateAccountComponent},
+  {path: 'checkout', component: CheckoutComponent},
+  {path: 'contact', component: ContactComponent}
 ]
 
 @NgModule({
@@ -58,6 +62,7 @@ const appRoutes: Routes =[
     DropdownServicesComponent,
     ProductdetailsComponent,
     ProductlistComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,10 @@
 <div class="row white" >
+    <div class="col"></div>
     <div class="col-4 d-flex jusity-content-center" style="margin-top: 25px;">
         <app-productlist (selectedProduct) = "onSelection($event)"></app-productlist>
 
     </div>
-    <div class="col-6 d-flex justify-content-center" style="margin-top: 200px;"><app-productdetails [deetsData] = "selectedProduct"></app-productdetails></div>
+    <div class="col-6 d-flex justify-content-center" style="margin-top: 25px;"><app-productdetails [deetsData] = "selectedProduct"></app-productdetails></div>
+    <div class="col"></div>
 </div>
 

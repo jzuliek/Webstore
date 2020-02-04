@@ -11,9 +11,10 @@
         <tbody>
             <tr *ngFor="let product of products" (click) = "productClicked(product)">
                 <th scope="row">{{product.id}}</th>
+                <td ><img src= {{product.image}} alt="..." style="height: 50px; width: 50px;"></td>
                 <td>
-                    <img [src]="" class="mr-2"
-                        style="width: 20px">
+                    <!--<img [src]="" class="mr-2"
+                        style="width: 10px">-->
                     {{product.productName}}
                 </td>
                 <td>{{ product.productDesc}}</td>

@@ -10,7 +10,7 @@ export class DataService {
   private productData: Products[]=[
     {
       id:'1',
-      productName: 'QueenS',
+      productName: 'Queen S',
       productDesc: 'Glamorized and handcrafted silk lashes to perfection',
       price: '12',
       image: '/assets/lash1.jpeg',
@@ -19,7 +19,7 @@ export class DataService {
     },
     {
       id:'2',
-      productName: 'PrincessV',
+      productName: 'Princess V',
       productDesc: 'Glamorized and handcrafted silk lashes to perfection',
       price: '12',
       image: '/assets/lash2.jpeg',
@@ -46,16 +46,16 @@ export class DataService {
     },
     {
       id:'5',
-      productName: 'HennesseyLi',
+      productName: 'Hennessey Li',
       productDesc: 'Glamorized and handcrafted silk lashes to perfection',
-      price: '14',
+      price: '12',
       image: '/assets/placeholder-product.png',
       qty: 0
 
     },
     {
       id:'6',
-      productName: 'Jbae',
+      productName: 'J-bae',
       productDesc: 'Glamorized and handcrafted mink lashes to perfection',
       price: '12',
       image: '/assets/placeholder-product.png',

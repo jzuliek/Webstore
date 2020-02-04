@@ -1,6 +1,6 @@
-    <div class="row">
+    <div *ngIf ="deetsData"class="row">
         <div class="col">
-            <img src= {{deetsData?.image}} class="d-block w-400" alt="...">
+            <img src= {{deetsData?.image}} alt="..." style="height: 400px; width: 400px;">
         </div>
         <div class="col">
             <div class="row">

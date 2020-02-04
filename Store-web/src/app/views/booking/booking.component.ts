@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {NgbCalendar, NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
+
 
 
 
@@ -11,9 +13,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookingComponent implements OnInit {
 
+  model: NgbDateStruct;
+  today = this.calendar.getToday();
+  placement = 'top-right';
+
  
 
-  constructor() { }
+  constructor(private calendar: NgbCalendar) { }
 
   ngOnInit() {
   }

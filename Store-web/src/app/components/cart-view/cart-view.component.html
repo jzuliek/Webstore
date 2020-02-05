@@ -1,8 +1,28 @@
-<ul class="list-group">
-    <li *ngFor="let item of coItems" class="list-group-item d-flex justify-content-between align-items-center">
-     {{item.productName}}
-      <span class="badge badge-primary badge-pill">{{item.qty}}</span>
-    </li>
-      <!--<li *ngFor="let item of coItems" class="list-group-item">{{item.productName}}</li>-->
-
-  </ul>
+<div *ngIf = "coTotal > 1" class="containder-fluid">
+  
+  <ul class="list-group" style="margin-top: 10px ;">
+      <li *ngFor="let item of coItems" class="list-group-item d-flex justify-content-between align-items-center">
+        <div class="col" >
+            <img src= {{item.image}} alt="..." style="height: 40px; width: 40px;">
+        </div>
+        <div class="col">
+          {{item.productName}}
+        </div>
+        <div class="col">
+          ${{item.price}} X
+        </div>
+        <span class="badge badge-primary badge-pill">{{item.qty}}</span>
+      </li>
+        <!--<li *ngFor="let item of coItems" class="list-group-item">{{item.productName}}</li>-->
+  
+    </ul>
+    <hr/>
+    <div class="row">
+      <div class="col">
+        <h2>Total:</h2>
+      </div>
+      <div class="col">
+        <h3>${{coTotal}}</h3>
+      </div>
+    </div>
+</div>

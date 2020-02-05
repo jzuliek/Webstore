@@ -1,0 +1,8 @@
+<ul class="list-group">
+    <li *ngFor="let item of coItems" class="list-group-item d-flex justify-content-between align-items-center">
+     {{item.productName}}
+      <span class="badge badge-primary badge-pill">{{item.qty}}</span>
+    </li>
+      <!--<li *ngFor="let item of coItems" class="list-group-item">{{item.productName}}</li>-->
+
+  </ul>

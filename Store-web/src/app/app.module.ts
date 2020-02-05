@@ -27,6 +27,7 @@ import { DropdownServicesComponent } from './components/dropdown-services/dropdo
 import { ProductdetailsComponent } from './views/productdetails/productdetails.component';
 import { ProductlistComponent } from './views/productlist/productlist.component';
 import { ContactComponent } from './views/contact/contact.component';
+import { CartViewComponent } from './components/cart-view/cart-view.component';
 
 const appRoutes: Routes =[
   {path: 'landing', component: LandingComponent},
@@ -64,6 +65,7 @@ const appRoutes: Routes =[
     ProductdetailsComponent,
     ProductlistComponent,
     ContactComponent,
+    CartViewComponent,
   ],
   imports: [
     BrowserModule,

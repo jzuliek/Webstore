@@ -6,6 +6,16 @@
 </div>
 <div class="container">
     <div class="row">
+        <div class="col"></div>
+        <div class="col">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"> Name</span>
+                </div>
+                <input type="text" aria-label="First name" class="form-control">
+                
+              </div>
+        </div>
         <div class="col">
             <div ngbDropdown class="d-inline-block">
                 <button class="btn btn-outline-light" id="dropdownBasic1" ngbDropdownToggle>Services</button>
@@ -19,16 +29,16 @@
         </div>
         <div class="col">
             <form class="form-inline">
-                <div class="form-group">
+                <!--<div class="form-group">-->
                   <div class="input-group">
                     <input class="form-control" placeholder= {{today.year}}-{{today.month}}-{{today.day}}
                            name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker"
                            [placement]="placement" [positionTarget]="buttonEl">
                     <div class="input-group-append">
-                      <button #buttonEl class="btn btn-outline-secondary" (click)="d.toggle()" type="button"></button>
+                      <button #buttonEl class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"><img src="https://img.icons8.com/android/24/000000/calendar.png"></button>
                     </div>
                   </div>
-                </div>
+                <!--</div>-->
               </form>
         </div>
         <div class="col">
@@ -39,5 +49,6 @@
                 </div>
             </div>
         </div>
+        <div class="col"><button type="button" class="btn btn-dark">Submit</button></div>
     </div>
 </div>

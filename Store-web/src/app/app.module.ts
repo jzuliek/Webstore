@@ -28,6 +28,7 @@ import { ProductdetailsComponent } from './views/productdetails/productdetails.c
 import { ProductlistComponent } from './views/productlist/productlist.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { CartViewComponent } from './components/cart-view/cart-view.component';
+import { PaymentComponent } from './views/forms/payment/payment.component';
 
 const appRoutes: Routes =[
   {path: 'landing', component: LandingComponent},
@@ -66,6 +67,7 @@ const appRoutes: Routes =[
     ProductlistComponent,
     ContactComponent,
     CartViewComponent,
+    PaymentComponent,
   ],
   imports: [
     BrowserModule,

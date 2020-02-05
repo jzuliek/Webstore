@@ -1,48 +1,48 @@
-<div class="container d-flex justify-content-center" style ="height: 700px;">
-    <div class="row d-flex align-items-center">
-        <div class="col-5">
-                <form>
-                        <div class="form-row">
-                          <div class="form-group col-md-6">
-                            <label for="inputEmail4">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                          </div>
-                          <div class="form-group col-md-6">
-                            <label for="inputPassword4">Password</label>
-                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label for="inputAddress">Address</label>
-                          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                        </div>
-                        <div class="form-group">
-                          <label for="inputAddress2">Address 2</label>
-                          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                        </div>
-                        <div class="form-row">
-                          <div class="form-group col-md-6">
-                            <label for="inputCity">City</label>
-                            <input type="text" class="form-control" id="inputCity">
-                          </div>
-                          <div class="form-group col-md-2">
-                            <label for="inputState">State</label>
-                            <select id="inputState" class="form-control">
-                              <option selected>Choose...</option>
-                              <option>CA</option>
-                            </select>
-                          </div>
-                          <div class="form-group col-md-4">
-                            <label for="inputZip">Zip</label>
-                            <input type="text" class="form-control" id="inputZip">
-                          </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Sign in</button>
-                      </form>
+<div class="container d-flex justify-content-center" style="height: 700px;">
+  <div class="row d-flex align-items-center">
+    <div class="col-5">
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="fName">First Name</label>
+            <input type ="name"class="form-control" id="fName" placeholder="First Name">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="lName">Last Name</label>
+            <input type="name" class="form-control" id="lName" placeholder="Last Name">
+          </div>
         </div>
-        <div class="col"></div>
-        <div class="col-6 white">
-            <app-cart-view></app-cart-view>
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
         </div>
+        <div class="form-group">
+          <label for="inputAddress2">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>CA</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Next</button>
+      </form>
     </div>
+    <div class="col"></div>
+    <div class="col-6 white">
+      <app-cart-view></app-cart-view>
+    </div>
+  </div>
 </div>

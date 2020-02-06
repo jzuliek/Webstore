@@ -1,4 +1,9 @@
-<div class="container d-flex justify-content-center" style="height: 700px;">
+<div *ngIf = "cartCount < 1 "class="container-fluid">
+  <div class="row white">
+    <div class="col d-flex justify-content-center"><img src= '/assets/emptycart.png' alt="..." style="height: 500px;"></div>
+  </div>
+</div>
+<div *ngIf = "cartCount >= 1" class="container d-flex justify-content-center" style="height: 700px;">
   <div class="row d-flex align-items-center">
     <div class="col-5">
       <form>

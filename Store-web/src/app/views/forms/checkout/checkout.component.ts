@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from 'src/app/services/cart.service';
 
 
 @Component({
@@ -8,11 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckoutComponent implements OnInit {
 
- 
+  cartCount = 0;
 
-  constructor() { }
+  constructor(private cService: CartService) { }
+
+  
 
   ngOnInit() {
+
+    this.cService.$cartQty.subscribe(count =>{
+      this.cartCount = count;
+      
+    });
     
   }
 

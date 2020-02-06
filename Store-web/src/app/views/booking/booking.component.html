@@ -1,5 +1,5 @@
 <div id="salonHero" class="row">
-    <div id ="bookingTitle" class="col-5 gold">
+    <div id="bookingTitle" class="col-5 gold">
         <h1>Book An Appointment</h1>
     </div>
 
@@ -10,11 +10,11 @@
         <div class="col">
             <div class="input-group">
                 <div class="input-group-prepend">
-                  <span class="input-group-text"> Name</span>
+                    <span class="input-group-text"> Name</span>
                 </div>
                 <input type="text" aria-label="First name" class="form-control">
-                
-              </div>
+
+            </div>
         </div>
         <div class="col">
             <div ngbDropdown class="d-inline-block">
@@ -30,16 +30,17 @@
         <div class="col">
             <form class="form-inline">
                 <!--<div class="form-group">-->
-                  <div class="input-group">
-                    <input class="form-control" placeholder= {{today.year}}-{{today.month}}-{{today.day}}
-                           name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker"
-                           [placement]="placement" [positionTarget]="buttonEl">
+                <div class="input-group">
+                    <input class="form-control" placeholder={{today.year}}-{{today.month}}-{{today.day}} name="dp"
+                        [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" [placement]="placement"
+                        [positionTarget]="buttonEl">
                     <div class="input-group-append">
-                      <button #buttonEl class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"><img src="https://img.icons8.com/android/24/000000/calendar.png"></button>
+                        <button #buttonEl class="btn btn-outline-secondary calendar" (click)="d.toggle()"
+                            type="button"><img src="https://img.icons8.com/android/24/000000/calendar.png"></button>
                     </div>
-                  </div>
+                </div>
                 <!--</div>-->
-              </form>
+            </form>
         </div>
         <div class="col">
             <div ngbDropdown class="d-inline-block">
@@ -49,6 +50,8 @@
                 </div>
             </div>
         </div>
-        <div class="col"><button type="button" class="btn btn-dark">Submit</button></div>
+        <div class="col">
+           
+        </div>
     </div>
 </div>

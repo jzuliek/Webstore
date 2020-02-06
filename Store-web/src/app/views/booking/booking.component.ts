@@ -5,13 +5,16 @@ import {NgbCalendar, NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
 
 
 
-
 @Component({
   selector: 'app-booking',
   templateUrl: './booking.component.html',
-  styleUrls: ['./booking.component.scss']
+  styleUrls: ['./booking.component.scss',],
 })
 export class BookingComponent implements OnInit {
+
+
+  show = false;
+  autohide = true;
 
   model: NgbDateStruct;
   today = this.calendar.getToday();
@@ -21,6 +24,7 @@ export class BookingComponent implements OnInit {
 
   constructor(private calendar: NgbCalendar) { }
 
+  
   ngOnInit() {
   }
  

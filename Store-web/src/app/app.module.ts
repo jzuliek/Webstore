@@ -29,6 +29,7 @@ import { ProductlistComponent } from './views/productlist/productlist.component'
 import { ContactComponent } from './views/contact/contact.component';
 import { CartViewComponent } from './components/cart-view/cart-view.component';
 import { PaymentComponent } from './views/forms/payment/payment.component';
+import { ToastsComponent } from './components/toasts/toasts.component';
 
 const appRoutes: Routes =[
   {path: 'landing', component: LandingComponent},
@@ -68,6 +69,7 @@ const appRoutes: Routes =[
     ContactComponent,
     CartViewComponent,
     PaymentComponent,
+    ToastsComponent,
   ],
   imports: [
     BrowserModule,

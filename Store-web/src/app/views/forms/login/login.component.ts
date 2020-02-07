@@ -11,18 +11,21 @@ export class LoginComponent implements OnInit {
 
   constructor(private logService: LoginService) { }
 
-  
+  userI: User[];
   
   ngOnInit() {
     
   }
 
   logIN(userEmail:string, password:string){
+
     if(this.logService.checkPassword(userEmail,password)) {
       alert('Your Logged in');
-    } else {
+    } 
+    else {
       alert('Please try again');
     }
+    
   }
 
 

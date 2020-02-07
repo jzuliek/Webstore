@@ -4,7 +4,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule} from '@angular/forms';
 import {NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
 import {CarouselModule} from 'primeng/carousel';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -30,6 +30,7 @@ import { ContactComponent } from './views/contact/contact.component';
 import { CartViewComponent } from './components/cart-view/cart-view.component';
 import { PaymentComponent } from './views/forms/payment/payment.component';
 import { ToastsComponent } from './components/toasts/toasts.component';
+import { ToastModule } from 'primeng/toast';
 
 const appRoutes: Routes =[
   {path: 'landing', component: LandingComponent},
@@ -73,10 +74,12 @@ const appRoutes: Routes =[
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     NgbModule,
     FormsModule,
     CarouselModule,
+    ToastModule,
     RouterModule.forRoot(
       appRoutes,{enableTracing:true}
     )

@@ -40,7 +40,7 @@ export class DataService {
       productName: 'Jenngo',
       productDesc: 'Glamorized and handcrafted silk lashes to perfection',
       price: '12',
-      image: '/assets/placeholder-product.png',
+      image: '/assets/lash1.jpeg',
       qty: 0
 
     },
@@ -49,7 +49,7 @@ export class DataService {
       productName: 'Hennessey Li',
       productDesc: 'Glamorized and handcrafted silk lashes to perfection',
       price: '12',
-      image: '/assets/placeholder-product.png',
+      image: '/assets/lash2.jpeg',
       qty: 0
 
     },
@@ -58,7 +58,7 @@ export class DataService {
       productName: 'J-bae',
       productDesc: 'Glamorized and handcrafted mink lashes to perfection',
       price: '12',
-      image: '/assets/placeholder-product.png',
+      image: '/assets/lash3.jpg',
       qty: 0
 
     }

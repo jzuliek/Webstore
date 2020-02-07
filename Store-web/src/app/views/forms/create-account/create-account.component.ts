@@ -28,9 +28,11 @@ export class CreateAccountComponent implements OnInit {
           lastName: lName,
           userEmail: emailU,
           passWord: passWord,
+          
         }
         //send entire object to be added to userPasswords
         this.logService.addUser(addthisName);
+        alert('account created');
       }
     }
     else {

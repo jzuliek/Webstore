@@ -4,17 +4,17 @@
     <form>
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <input #em type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
           <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <input #pw type="password" class="form-control" id="exampleInputPassword1">
         </div>
         <div class="form-group form-check">
           <label class="form-check-label" routerLink="/createAccount" routerLinkActive="active"> Create Account </label>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" (click) = "logIN(em.value, pw.value)"class="btn btn-primary">Submit</button>
       </form>
   </div>
 </div>
